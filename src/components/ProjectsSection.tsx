@@ -36,7 +36,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Well, this is it. A portfolio website to showcase my projects and skills.",
     image: "/projects/portfolio-hero.jpg?v=1",
-    tags: ["Next.js", "TailwindCSS", "React.js", "Shadcn.ui"],
+    tags: ["TypeScript","Next.js", "TailwindCSS", "React.js", "Shadcn.ui"],
     liveUrl: "#",
     githubUrl: "#",
   },

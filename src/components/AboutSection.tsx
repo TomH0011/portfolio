@@ -47,11 +47,11 @@ export function AboutSection() {
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-primary"></span>
-                      <span>User-Centered Design</span>
+                      <span>Clean, maintainable code</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-primary"></span>
-                      <span>Performance Optimization</span>
+                      <span>Creative approach to problem solving</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-primary"></span>
@@ -59,7 +59,7 @@ export function AboutSection() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-primary"></span>
-                      <span>Clean, Maintainable Code</span>
+                      <span>Hard, consistent work</span>
                     </li>
                   </ul>
                 </CardContent>

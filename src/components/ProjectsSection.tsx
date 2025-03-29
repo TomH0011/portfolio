@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Crypto Currency Trading app",
     description: "A full-featured Crypto trading built with React, Node.js, and Java's Springboot. Includes user authentication, Wishlisting, Crypto currency tracking, and payment processing.",
-    image: "/projects/login-form.jpg",
+    image: "/projects/login-form.jpg?v=1",
     tags: ["React.js", "Node.js", "Java", "Stripe", "MySQL", "Spring Boot", "TailwindCSS"],
     liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/Crypto-Trading-App",
@@ -19,15 +19,15 @@ const projects = [
   {
     title: "Skin Lesion Classification using CNN's",
     description: "A convolutional neural network trained to classify skin lesions as either into 1 of 6 different categories",
-    image: "/projects/neural-network.jpg",
+    image: "/projects/neural-network.jpg?v=1",
     tags: ["Python", "Keras", "TensorFlow", "Pandas", "Numpy"],
     liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/SkinCancerNeuralNetwork",
   },
   {
-    title: "Audio Visulaiser",
+    title: "Audio Visualiser",
     description: "A visualiser which breaks up .wav files into their frequency components, and displays them on a 2d graph to visualise audio in the frequency space.",
-    image: "/projects/sound-wave.png",
+    image: "/projects/sound-wave.jpg?v=1",
     tags: ["Python", "Matplotlib", "Numpy", "Pandas"],
     liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/AudioVisualisation",
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "Well, this is it. A portfolio website to showcase my projects and skills.",
-    image: "/projects/portfolio-hero.jpg",
+    image: "/projects/portfolio-hero.jpg?v=1",
     tags: ["Next.js", "TailwindCSS", "React.js", "Shadcn.ui"],
     liveUrl: "#",
     githubUrl: "#",

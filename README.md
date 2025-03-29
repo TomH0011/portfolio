@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+-----------------------------------------------------------------------------------------------------------
+This was built soley with AI using Cursor's built in AI agent
+specificially claude-3.7-sonnet
+Just for the interest of trying a new tool
+-----------------------------------------------------------------------------------------------------------
+
 ## Getting Started
 
 First, run the development server:

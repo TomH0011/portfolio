@@ -145,7 +145,7 @@ export function HeroSection() {
               style={{ fontFamily: "var(--font-space-mono), var(--font-geist-mono), monospace" }}
             >
               <span className="text-primary dark:text-primary-foreground">$ </span>
-              A recent graduate of Mathematics with a passion for backend engineering in Java and Python and much more...
+              A recent graduate of Mathematics with a passion for backend engineering in Java and Python and much more.
             </motion.p>
             
             <motion.div

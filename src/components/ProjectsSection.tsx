@@ -3,7 +3,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import Image from "next/image";
 import { useScrollAnimation } from "@/lib/animation";
 
@@ -13,15 +13,13 @@ const projects = [
     description: "A full-featured Crypto trading built with React, Node.js, and Java's Springboot. Includes user authentication, Wishlisting, Crypto currency tracking, and payment processing.",
     image: "/projects/login-form.jpg?v=1",
     tags: ["React.js", "Node.js", "Java", "Stripe", "MySQL", "Spring Boot", "TailwindCSS"],
-    liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/Crypto-Trading-App",
   },
   {
-    title: "Skin Lesion Classification using CNN's",
+    title: "Skin Lesion Classification using CNNs",
     description: "A convolutional neural network trained to classify skin lesions as either into 1 of 6 different categories",
     image: "/projects/neural-network.jpg?v=1",
     tags: ["Python", "Keras", "TensorFlow", "Pandas", "Numpy"],
-    liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/SkinCancerNeuralNetwork",
   },
   {
@@ -29,7 +27,6 @@ const projects = [
     description: "A visualiser which breaks up .wav files into their frequency components, and displays them on a 2d graph to visualise audio in the frequency space.",
     image: "/projects/sound-wave.jpg?v=1",
     tags: ["Python", "Matplotlib", "Numpy", "Pandas"],
-    liveUrl: "#",
     githubUrl: "https://github.com/TomH0011/AudioVisualisation",
   },
   {
@@ -37,7 +34,6 @@ const projects = [
     description: "Well, this is it. A portfolio website to showcase my projects and skills.",
     image: "/projects/portfolio-hero.jpg?v=1",
     tags: ["TypeScript","Next.js", "TailwindCSS", "React.js", "Shadcn.ui"],
-    liveUrl: "#",
     githubUrl: "#",
   },
 ];

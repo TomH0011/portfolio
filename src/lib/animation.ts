@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 // Create a single shared observer instance for better performance
 let globalObserver: IntersectionObserver | null = null;
@@ -13,7 +13,7 @@ const MAX_CONCURRENT_ANIMATIONS = 4;
 let currentlyAnimating = 0;
 
 // Custom hook for scroll animations with improved performance
-export function useScrollAnimation() {
+export function useScrollAnimation(): null {
   useEffect(() => {
     // Clear any existing timeout when component mounts
     if (setupAnimationsTimeout) {
@@ -55,10 +55,8 @@ export function useScrollAnimation() {
         }, options);
       }
 
-      // Use requestIdleCallback where available, fallback to requestAnimationFrame
-      const scheduleWork = window.requestIdleCallback || window.requestAnimationFrame;
-      
-      scheduleWork(() => {
+      // Simplified scheduling approach to avoid type issues
+      const observeFadeElements = () => {
         const fadeElements = document.querySelectorAll(".fade-in-up");
         fadeElements.forEach((el) => {
           if (!observedElements.has(el)) {
@@ -66,7 +64,11 @@ export function useScrollAnimation() {
             observedElements.add(el);
           }
         });
-      });
+      };
+      
+      // Use setTimeout as a simple fallback that works everywhere
+      setTimeout(observeFadeElements, 0);
+      
     }, ANIMATION_SETUP_DELAY);
 
     return () => {
@@ -86,8 +88,29 @@ export function useScrollAnimation() {
   return null;
 }
 
+// Animation variants type
+interface AnimationVariant {
+  hidden: {
+    opacity: number;
+    y?: number;
+    scale?: number;
+  };
+  visible: {
+    opacity: number;
+    y?: number;
+    scale?: number;
+    transition: {
+      duration?: number;
+      ease?: number[] | string;
+      delay?: number;
+      staggerChildren?: number;
+    }
+  };
+  [key: string]: any; // Add index signature for compatibility with Framer Motion
+}
+
 // Simplified animation variants that are less taxing on the GPU
-export const fadeInUp = {
+export const fadeInUp: AnimationVariant = {
   hidden: { opacity: 0, y: 10 }, // Reduced distance for better performance
   visible: { 
     opacity: 1, 
@@ -99,7 +122,7 @@ export const fadeInUp = {
   }
 };
 
-export const staggerContainer = {
+export const staggerContainer: AnimationVariant = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -109,7 +132,7 @@ export const staggerContainer = {
   }
 };
 
-export const scaleIn = {
+export const scaleIn: AnimationVariant = {
   hidden: { opacity: 0, scale: 0.98 }, // Smaller scale change
   visible: { 
     opacity: 1, 
@@ -122,7 +145,7 @@ export const scaleIn = {
 };
 
 // Utility function to add delay to animations
-export const withDelay = (variant: any, delay: number) => {
+export const withDelay = (variant: AnimationVariant, delay: number): AnimationVariant => {
   return {
     ...variant,
     visible: {

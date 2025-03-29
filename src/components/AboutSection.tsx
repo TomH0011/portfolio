@@ -25,14 +25,14 @@ export function AboutSection() {
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold mb-4">My Background</h3>
                 <p className="mb-4">
-                  As a recent Durham University Matheamatics graduate,
-                  and a background in Full Stack Development, 
+                  As a recent Durham University Mathematics graduate
+                  with a background in Full Stack Development, 
                   I have a passion for learning and building new and developing existing skills.
                 </p>
                 <p>
-                  Currently, the languages I develop with are Java, Python, Javascript. 
-                  as well as knowledge in various web developmetn frameworks such as React, Node.js, and Spring Boot.
-                  Furthermore, i have retroactively developed skills in data science and machine learning,
+                  Currently, the languages I develop with are Java, Python, JavaScript, 
+                  as well as knowledge in various web development frameworks such as React, Node.js, and Spring Boot.
+                  Furthermore, I have retroactively developed skills in data science and machine learning,
                   with experience in R, SQL, pandas, numpy, and more.
                 </p>
               </CardContent>

@@ -93,7 +93,7 @@ export function ProjectsSection() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-between">
+                <CardFooter className="flex justify-center">
                   <Button variant="outline" size="sm" asChild>
                     <a 
                       href={project.githubUrl} 
@@ -105,21 +105,24 @@ export function ProjectsSection() {
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" asChild>
-                    <a 
-                      href={project.liveUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      Live Demo
-                    </a>
-                  </Button>
                 </CardFooter>
               </Card>
             </div>
           ))}
+        </div>
+
+        {/* View More button - links to GitHub profile */}
+        <div className="mt-10 flex justify-end fade-in-up">
+          <Button size="lg" variant="default" asChild className="flex items-center gap-2">
+            <a 
+              href="https://github.com/TomH0011" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Github className="h-5 w-5" />
+              View More...
+            </a>
+          </Button>
         </div>
       </div>
     </section>

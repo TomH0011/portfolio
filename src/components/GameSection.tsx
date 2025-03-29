@@ -576,7 +576,7 @@ export function GameSection() {
         <div className="text-center mb-12 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills Break</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Take a short break and play this mini-game! Click anywhere in the game area to jump between islands.
+            Take a short break and play this mini-game! Click the jump button in the game area or press SPACE to jump between islands.
           </p>
           <Separator className="max-w-md mx-auto mt-8 bg-primary/20" />
         </div>
